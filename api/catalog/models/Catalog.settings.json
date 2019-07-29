@@ -1,0 +1,53 @@
+{
+  "connection": "default",
+  "collectionName": "catalog",
+  "info": {
+    "name": "catalog",
+    "description": "栏目"
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "name": {
+      "required": true,
+      "minLength": 2,
+      "maxLength": 8,
+      "unique": true,
+      "type": "string"
+    },
+    "description": {
+      "maxLength": 200,
+      "type": "text"
+    },
+    "parent": {
+      "model": "catalog",
+      "via": "children"
+    },
+    "children": {
+      "collection": "catalog",
+      "via": "parent"
+    },
+    "pic": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "mode": {
+      "model": "mode"
+    },
+    "type": {
+      "model": "type"
+    },
+    "path": {
+      "maxLength": 20,
+      "required": true,
+      "minLength": 1,
+      "type": "string",
+      "unique": true
+    }
+  }
+}

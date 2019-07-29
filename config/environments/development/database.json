@@ -1,0 +1,19 @@
+{
+  "defaultConnection": "default",
+  "connections": {
+    "default": {
+      "connector": "strapi-hook-mongoose",
+      "settings": {
+        "database": "PinorCMS",
+        "host": "101.200.72.54",
+        "srv": false,
+        "port": 27017,
+        "username": "PinorCMS",
+        "password": "Pengcl19821025"
+      },
+      "options": {
+        "authenticationDatabase": ""
+      }
+    }
+  }
+}

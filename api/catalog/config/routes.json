@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/catalogs",
+      "handler": "Catalog.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/catalogs/count",
+      "handler": "Catalog.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/catalogs/:_id",
+      "handler": "Catalog.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/catalogs",
+      "handler": "Catalog.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/catalogs/:_id",
+      "handler": "Catalog.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/catalogs/:_id",
+      "handler": "Catalog.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

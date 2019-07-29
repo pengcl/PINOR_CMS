@@ -1,0 +1,43 @@
+{
+  "connection": "default",
+  "collectionName": "article",
+  "info": {
+    "name": "article",
+    "description": "文档"
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "title": {
+      "maxLength": 30,
+      "required": true,
+      "unique": true,
+      "minLength": 4,
+      "type": "string"
+    },
+    "description": {
+      "maxLength": 200,
+      "type": "text"
+    },
+    "body": {
+      "type": "text"
+    },
+    "mode": {
+      "model": "mode"
+    },
+    "public": {
+      "default": true,
+      "required": true,
+      "type": "boolean"
+    },
+    "tags": {
+      "collection": "tag",
+      "via": "articles",
+      "dominant": true
+    }
+  }
+}

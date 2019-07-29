@@ -1,0 +1,20 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "type",
+    "description": "栏目类型：列表|封面"
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "maxLength": 8,
+      "required": true,
+      "unique": true,
+      "minLength": 2,
+      "type": "string"
+    }
+  }
+}
