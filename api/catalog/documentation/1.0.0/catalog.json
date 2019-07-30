@@ -563,6 +563,9 @@
               },
               "path": {
                 "type": "string"
+              },
+              "content": {
+                "type": "string"
               }
             }
           },
@@ -603,6 +606,9 @@
                   "type": "string"
                 },
                 "path": {
+                  "type": "string"
+                },
+                "content": {
                   "type": "string"
                 }
               }
@@ -686,6 +692,9 @@
             "type": "string",
             "maxLength": 20,
             "minLength": 1
+          },
+          "content": {
+            "type": "string"
           }
         }
       },
@@ -723,6 +732,9 @@
             "type": "string",
             "maxLength": 20,
             "minLength": 1
+          },
+          "content": {
+            "type": "string"
           }
         }
       }

@@ -48,6 +48,9 @@
       "minLength": 1,
       "type": "string",
       "unique": true
+    },
+    "content": {
+      "type": "text"
     }
   }
 }
