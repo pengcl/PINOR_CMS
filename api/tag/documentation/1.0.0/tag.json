@@ -519,8 +519,11 @@
           },
           "name": {
             "type": "string",
-            "maxLength": 8,
-            "minLength": 2
+            "maxLength": 1,
+            "minLength": 1
+          },
+          "text": {
+            "type": "string"
           },
           "articles": {
             "type": "array",
@@ -554,6 +557,9 @@
                   "items": {
                     "type": "string"
                   }
+                },
+                "catalog": {
+                  "type": "string"
                 }
               }
             }
@@ -567,8 +573,11 @@
         "properties": {
           "name": {
             "type": "string",
-            "maxLength": 8,
-            "minLength": 2
+            "maxLength": 1,
+            "minLength": 1
+          },
+          "text": {
+            "type": "string"
           },
           "articles": {
             "type": "array",

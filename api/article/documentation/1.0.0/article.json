@@ -525,7 +525,7 @@
           },
           "description": {
             "type": "string",
-            "maxLength": 200
+            "maxLength": 500
           },
           "body": {
             "type": "string"
@@ -540,6 +540,9 @@
                 "type": "string"
               },
               "name": {
+                "type": "string"
+              },
+              "text": {
                 "type": "string"
               }
             }
@@ -562,12 +565,57 @@
                 "name": {
                   "type": "string"
                 },
+                "text": {
+                  "type": "string"
+                },
                 "articles": {
                   "type": "array",
                   "items": {
                     "type": "string"
                   }
                 }
+              }
+            }
+          },
+          "catalog": {
+            "required": [
+              "id",
+              "name",
+              "path"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "parent": {
+                "type": "string"
+              },
+              "children": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "pic": {
+                "type": "string"
+              },
+              "mode": {
+                "type": "string"
+              },
+              "type": {
+                "type": "string"
+              },
+              "path": {
+                "type": "string"
+              },
+              "content": {
+                "type": "string"
               }
             }
           }
@@ -586,7 +634,7 @@
           },
           "description": {
             "type": "string",
-            "maxLength": 200
+            "maxLength": 500
           },
           "body": {
             "type": "string"
@@ -603,6 +651,9 @@
             "items": {
               "type": "string"
             }
+          },
+          "catalog": {
+            "type": "string"
           }
         }
       }

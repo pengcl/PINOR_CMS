@@ -521,6 +521,9 @@
             "type": "string",
             "maxLength": 8,
             "minLength": 2
+          },
+          "text": {
+            "type": "string"
           }
         }
       },
@@ -533,6 +536,9 @@
             "type": "string",
             "maxLength": 8,
             "minLength": 2
+          },
+          "text": {
+            "type": "string"
           }
         }
       }

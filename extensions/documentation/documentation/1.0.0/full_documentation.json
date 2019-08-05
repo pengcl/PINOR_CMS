@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "07/30/2019 3:59:05 PM"
+    "x-generation-date": "08/05/2019 2:32:57 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -5160,7 +5160,7 @@
           },
           "description": {
             "type": "string",
-            "maxLength": 200
+            "maxLength": 500
           },
           "body": {
             "type": "string"
@@ -5175,6 +5175,9 @@
                 "type": "string"
               },
               "name": {
+                "type": "string"
+              },
+              "text": {
                 "type": "string"
               }
             }
@@ -5197,12 +5200,57 @@
                 "name": {
                   "type": "string"
                 },
+                "text": {
+                  "type": "string"
+                },
                 "articles": {
                   "type": "array",
                   "items": {
                     "type": "string"
                   }
                 }
+              }
+            }
+          },
+          "catalog": {
+            "required": [
+              "id",
+              "name",
+              "path"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "parent": {
+                "type": "string"
+              },
+              "children": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "pic": {
+                "type": "string"
+              },
+              "mode": {
+                "type": "string"
+              },
+              "type": {
+                "type": "string"
+              },
+              "path": {
+                "type": "string"
+              },
+              "content": {
+                "type": "string"
               }
             }
           }
@@ -5221,7 +5269,7 @@
           },
           "description": {
             "type": "string",
-            "maxLength": 200
+            "maxLength": 500
           },
           "body": {
             "type": "string"
@@ -5238,6 +5286,9 @@
             "items": {
               "type": "string"
             }
+          },
+          "catalog": {
+            "type": "string"
           }
         }
       },
@@ -5404,6 +5455,9 @@
               },
               "name": {
                 "type": "string"
+              },
+              "text": {
+                "type": "string"
               }
             }
           },
@@ -5417,6 +5471,9 @@
                 "type": "string"
               },
               "name": {
+                "type": "string"
+              },
+              "text": {
                 "type": "string"
               }
             }
@@ -5484,6 +5541,9 @@
             "type": "string",
             "maxLength": 8,
             "minLength": 2
+          },
+          "text": {
+            "type": "string"
           }
         }
       },
@@ -5496,6 +5556,9 @@
             "type": "string",
             "maxLength": 8,
             "minLength": 2
+          },
+          "text": {
+            "type": "string"
           }
         }
       },
@@ -5510,8 +5573,11 @@
           },
           "name": {
             "type": "string",
-            "maxLength": 8,
-            "minLength": 2
+            "maxLength": 1,
+            "minLength": 1
+          },
+          "text": {
+            "type": "string"
           },
           "articles": {
             "type": "array",
@@ -5545,6 +5611,9 @@
                   "items": {
                     "type": "string"
                   }
+                },
+                "catalog": {
+                  "type": "string"
                 }
               }
             }
@@ -5558,8 +5627,11 @@
         "properties": {
           "name": {
             "type": "string",
-            "maxLength": 8,
-            "minLength": 2
+            "maxLength": 1,
+            "minLength": 1
+          },
+          "text": {
+            "type": "string"
           },
           "articles": {
             "type": "array",
@@ -5758,6 +5830,9 @@
             "type": "string",
             "maxLength": 8,
             "minLength": 2
+          },
+          "text": {
+            "type": "string"
           }
         }
       },
@@ -5770,6 +5845,9 @@
             "type": "string",
             "maxLength": 8,
             "minLength": 2
+          },
+          "text": {
+            "type": "string"
           }
         }
       },

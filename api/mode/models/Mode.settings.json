@@ -1,12 +1,15 @@
 {
   "connection": "default",
-  "collectionName": "",
+  "collectionName": "mode",
   "info": {
     "name": "mode",
     "description": "文档类型"
   },
   "options": {
-    "timestamps": true
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
   },
   "attributes": {
     "name": {
@@ -14,6 +17,9 @@
       "required": true,
       "unique": true,
       "minLength": 2,
+      "type": "string"
+    },
+    "text": {
       "type": "string"
     }
   }

@@ -671,6 +671,9 @@
               },
               "name": {
                 "type": "string"
+              },
+              "text": {
+                "type": "string"
               }
             }
           },
@@ -684,6 +687,9 @@
                 "type": "string"
               },
               "name": {
+                "type": "string"
+              },
+              "text": {
                 "type": "string"
               }
             }

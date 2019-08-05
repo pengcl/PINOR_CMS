@@ -1,12 +1,15 @@
 {
   "connection": "default",
-  "collectionName": "",
+  "collectionName": "type",
   "info": {
     "name": "type",
     "description": "栏目类型：列表|封面"
   },
   "options": {
-    "timestamps": true
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
   },
   "attributes": {
     "name": {
@@ -14,6 +17,9 @@
       "required": true,
       "unique": true,
       "minLength": 2,
+      "type": "string"
+    },
+    "text": {
       "type": "string"
     }
   }

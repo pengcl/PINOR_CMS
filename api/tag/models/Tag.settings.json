@@ -1,19 +1,25 @@
 {
   "connection": "default",
-  "collectionName": "",
+  "collectionName": "tag",
   "info": {
     "name": "tag",
     "description": "文档标签"
   },
   "options": {
-    "timestamps": true
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
   },
   "attributes": {
     "name": {
-      "maxLength": 8,
+      "maxLength": 1,
       "required": true,
       "unique": true,
-      "minLength": 2,
+      "minLength": 1,
+      "type": "string"
+    },
+    "text": {
       "type": "string"
     },
     "articles": {

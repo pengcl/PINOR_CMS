@@ -20,7 +20,7 @@
       "type": "string"
     },
     "description": {
-      "maxLength": 200,
+      "maxLength": 500,
       "type": "text"
     },
     "body": {
@@ -38,6 +38,9 @@
       "collection": "tag",
       "via": "articles",
       "dominant": true
+    },
+    "catalog": {
+      "model": "catalog"
     }
   }
 }
